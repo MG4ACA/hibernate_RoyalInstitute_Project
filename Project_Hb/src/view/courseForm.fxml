@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="476.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CourseFormController">
+   <children>
+      <Label layoutX="25.0" layoutY="77.0" prefHeight="32.0" prefWidth="130.0" text="Course Code">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Label layoutX="317.0" layoutY="77.0" prefHeight="32.0" prefWidth="130.0" text="Course Name">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Label layoutX="25.0" layoutY="181.0" prefHeight="32.0" prefWidth="130.0" text="Course Type">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Label layoutX="317.0" layoutY="181.0" prefHeight="32.0" prefWidth="130.0" text="Duration">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Label layoutX="232.0" layoutY="14.0" prefHeight="35.0" prefWidth="137.0" text="Add Course">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txt_CourseCode" layoutX="25.0" layoutY="109.0" prefHeight="31.0" prefWidth="168.0" />
+      <JFXTextField fx:id="txt_Duration" layoutX="317.0" layoutY="213.0" prefHeight="31.0" prefWidth="242.0" />
+      <JFXTextField fx:id="txt_CourseName" layoutX="317.0" layoutY="109.0" prefHeight="31.0" prefWidth="242.0" />
+      <JFXTextField fx:id="txt_CourseType" layoutX="25.0" layoutY="213.0" prefHeight="31.0" prefWidth="242.0" />
+      <JFXButton fx:id="btnAddCourse" layoutX="395.0" layoutY="270.0" onAction="#addCourseOnAction" prefHeight="39.0" prefWidth="130.0" style="-fx-background-color: #99ebff;" text="Add Course">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <TableView layoutX="11.0" layoutY="325.0" prefHeight="138.0" prefWidth="581.0">
+        <columns>
+          <TableColumn prefWidth="100.0" text="Program ID" />
+          <TableColumn prefWidth="183.0" text="Program " />
+            <TableColumn prefWidth="127.0" />
+            <TableColumn prefWidth="169.0" text="Duration" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
